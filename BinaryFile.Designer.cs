@@ -32,8 +32,9 @@
             this.btInActivate = new System.Windows.Forms.Button();
             this.btUpdate = new System.Windows.Forms.Button();
             this.btReWrite = new System.Windows.Forms.Button();
-            this.tbIndex = new System.Windows.Forms.TextBox();
-            this.tbGo = new System.Windows.Forms.Button();
+            this.tbAccountId = new System.Windows.Forms.TextBox();
+            this.tbGetProductIds = new System.Windows.Forms.Button();
+            this.tbAccountSortCodeId = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,30 +77,38 @@
             this.btReWrite.UseVisualStyleBackColor = true;
             this.btReWrite.Click += new System.EventHandler(this.btReWrite_Click);
             // 
-            // tbIndex
+            // tbAccountId
             // 
-            this.tbIndex.Location = new System.Drawing.Point(13, 527);
-            this.tbIndex.Name = "tbIndex";
-            this.tbIndex.Size = new System.Drawing.Size(100, 20);
-            this.tbIndex.TabIndex = 4;
+            this.tbAccountId.Location = new System.Drawing.Point(13, 527);
+            this.tbAccountId.Name = "tbAccountId";
+            this.tbAccountId.Size = new System.Drawing.Size(100, 20);
+            this.tbAccountId.TabIndex = 4;
             // 
-            // tbGo
+            // tbGetProductIds
             // 
-            this.tbGo.Location = new System.Drawing.Point(454, 527);
-            this.tbGo.Name = "tbGo";
-            this.tbGo.Size = new System.Drawing.Size(75, 23);
-            this.tbGo.TabIndex = 5;
-            this.tbGo.Text = "Go";
-            this.tbGo.UseVisualStyleBackColor = true;
-            this.tbGo.Click += new System.EventHandler(this.tbGo_Click);
+            this.tbGetProductIds.Location = new System.Drawing.Point(454, 527);
+            this.tbGetProductIds.Name = "tbGetProductIds";
+            this.tbGetProductIds.Size = new System.Drawing.Size(75, 23);
+            this.tbGetProductIds.TabIndex = 5;
+            this.tbGetProductIds.Text = "Get Ids";
+            this.tbGetProductIds.UseVisualStyleBackColor = true;
+            this.tbGetProductIds.Click += new System.EventHandler(this.tbGetProductIds_Click);
+            // 
+            // tbAccountSortCodeId
+            // 
+            this.tbAccountSortCodeId.Location = new System.Drawing.Point(119, 527);
+            this.tbAccountSortCodeId.Name = "tbAccountSortCodeId";
+            this.tbAccountSortCodeId.Size = new System.Drawing.Size(100, 20);
+            this.tbAccountSortCodeId.TabIndex = 6;
             // 
             // BinaryFile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 562);
-            this.Controls.Add(this.tbGo);
-            this.Controls.Add(this.tbIndex);
+            this.Controls.Add(this.tbAccountSortCodeId);
+            this.Controls.Add(this.tbGetProductIds);
+            this.Controls.Add(this.tbAccountId);
             this.Controls.Add(this.btReWrite);
             this.Controls.Add(this.btUpdate);
             this.Controls.Add(this.btInActivate);
@@ -120,7 +129,8 @@
         private System.Windows.Forms.Button btInActivate;
         private System.Windows.Forms.Button btUpdate;
         private System.Windows.Forms.Button btReWrite;
-        private System.Windows.Forms.TextBox tbIndex;
-        private System.Windows.Forms.Button tbGo;
+        private System.Windows.Forms.TextBox tbAccountId;
+        private System.Windows.Forms.Button tbGetProductIds;
+        private System.Windows.Forms.TextBox tbAccountSortCodeId;
     }
 }
