@@ -35,6 +35,7 @@
             this.tbAccountId = new System.Windows.Forms.TextBox();
             this.tbGetProductIds = new System.Windows.Forms.Button();
             this.tbAccountSortCodeId = new System.Windows.Forms.TextBox();
+            this.btGo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,11 +102,22 @@
             this.tbAccountSortCodeId.Size = new System.Drawing.Size(100, 20);
             this.tbAccountSortCodeId.TabIndex = 6;
             // 
+            // btGo
+            // 
+            this.btGo.Location = new System.Drawing.Point(373, 527);
+            this.btGo.Name = "btGo";
+            this.btGo.Size = new System.Drawing.Size(75, 23);
+            this.btGo.TabIndex = 7;
+            this.btGo.Text = "go";
+            this.btGo.UseVisualStyleBackColor = true;
+            this.btGo.Click += new System.EventHandler(this.btGo_Click);
+            // 
             // BinaryFile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 562);
+            this.Controls.Add(this.btGo);
             this.Controls.Add(this.tbAccountSortCodeId);
             this.Controls.Add(this.tbGetProductIds);
             this.Controls.Add(this.tbAccountId);
@@ -132,5 +144,6 @@
         private System.Windows.Forms.TextBox tbAccountId;
         private System.Windows.Forms.Button tbGetProductIds;
         private System.Windows.Forms.TextBox tbAccountSortCodeId;
+        private System.Windows.Forms.Button btGo;
     }
 }

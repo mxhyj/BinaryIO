@@ -9,8 +9,6 @@ namespace BinaryFileIO
         const string fileName_old = @"\\SLUMBERAD\CompanyData\Admin\Vision.net conversion\CustomerProduct1.bin";
         const string fileName_new = @"\\SLUMBERAD\CompanyData\Admin\Vision.net conversion\CustomerProduct_New.bin";
 
-        private DataTable TB_Bridge = new DataTable();
-
         private Bin_Old bo = new Bin_Old(fileName_old);
         private Bin bin = new Bin(fileName_new);
 
@@ -60,11 +58,18 @@ namespace BinaryFileIO
             MessageBox.Show(paraStringProductId);
         }
 
-        private void CreateNewFile(int Size_Chunk_New)
+
+        private void btGo_Click(object sender, EventArgs e)
         {
+            //MessageBox.Show(BitConverter.ToString(bin.GetTransactionBytes(115, 12232, 3, 4, true)));
+            /*
+            foreach(DataRow dr in bo.TableBinary.Rows)
+            {
+                bin.AddTransaction(dr.Field<int>("AccountId"), dr.Field<int>("AccountSortCodeId"), dr.Field<int>("ProductId"), dr.Field<bool>("IsActive"));
+            }
+            */
 
-
-
+            MessageBox.Show(string.Format("Old rows: {0}, new rows: {1}", bo.TableBinary.Rows.Count, bin.TableBinary.Rows.Count));
         }
     }
 }
